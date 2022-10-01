@@ -3,7 +3,7 @@
 *AUTOR: SIFAQRS ZERROUKI
 *EMAIL: SIPHAXZER@GMAIL.COM
 *TEL:658629772
-GIT:
+GIT: https://github.com/sifaqes/Full-Stack-PHP-
  */ -->
 
 
@@ -19,7 +19,7 @@ include_once'includes/config.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Devloper - Sifaqes Zerrouki</title>
-    <link rel="apple-touche-icon" href="icon.png">
+    <link rel="apple-touche-icon" href="/icon.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -30,9 +30,9 @@ include_once'includes/config.php';
 <?php
 if($database){
     echo'
-    <div>
+    <div class="container">
       <h1>Full Stack PHP</h1>
-    </div>
+    </div> <br>
     ';
     }
 ?>
@@ -59,12 +59,12 @@ $addData = $database->prepare("INSERT INTO PERSONAS(id_parent,nombre)
  $addData->bindParam("nombre",$nombre);
 
 if($addData->execute()){
-  echo '<div class="alert alert-success mt-3" role="alert">
+  echo '<div class="alert alert-success mt-3 container" role="alert">
         Datos anadidos con exito
         </div>';
  
 }else{
-  echo '<div class="alert alert-danger" role="alert">
+  echo '<div class="alert alert-danger container" role="alert">
         Erreur anadir datos
         </div>';
   echo '  ';
