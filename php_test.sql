@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-10-2022 a las 17:25:45
+-- Tiempo de generación: 01-10-2022 a las 17:31:56
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -39,16 +39,7 @@ CREATE TABLE `personas` (
 
 INSERT INTO `personas` (`id`, `id_parent`, `nombre`) VALUES
 (1, 1, 'siphax'),
-(2, 1, 'Mohamed'),
-(3, 2, 'Mohamed'),
-(4, 3, 'Mohamed'),
-(5, 3, 'Mohamed'),
-(6, 3, 'Mohamed'),
-(7, 3, 'Mohamed'),
-(8, 3, 'Mohamed'),
-(9, 3, 'Mohamed'),
-(10, 3, 'Mohamed'),
-(11, 3, 'Mohamed');
+(12, 4, 'SIFAQES ZERROUKI');
 
 --
 -- Índices para tablas volcadas
@@ -68,7 +59,7 @@ ALTER TABLE `personas`
 -- AUTO_INCREMENT de la tabla `personas`
 --
 ALTER TABLE `personas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
